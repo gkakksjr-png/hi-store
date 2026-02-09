@@ -31,20 +31,20 @@
                 </ul>
             </div>
             <div class="h_middle">
-                <h1><a href="./index.html"></a><img src="#" alt="hi-store"></h1>
+                <h1><a href="./index.html"></a><img src="./images/logo.png" alt="hi-store"></h1>
                 <form id="search_box">
                     <input type="text">
-                    <button type="button"><img src="#" alt="search"></button>
+                    <button type="button"><img src="./images/search.svg" alt="search"></button>
                 </form>
                 <ul class="lnb_user">
-                    <li><a href="#"><img src="#" alt="뭐배송아이콘이름"></a></li>
-                    <li><a href="#"><img src="#" alt="profire"></a></li>
-                    <li><a href="#"><img src="#" alt="cart"></a></li>
+                    <li><a href="#"><img src="#" alt="배송"></a></li>
+                    <li><a href="#"><img src="./images/person.svg" alt="profire"></a></li>
+                    <li><a href="#"><img src="./images/cart.svg" alt="cart"></a></li>
                 </ul>
             </div>
             <div class="h_bottom">
                 <ul>
-                    <li><a href="#"><img src="#" alt="메뉴보기"></a></li>
+                    <li><a href="#"><img src="./images/category_menu.svg" alt="메뉴보기"></a></li>
                     <li><a href="#">좋은책방</a></li>
                     <li><a href="#">체험티켓</a></li>
                     <li><a href="#">베스트</a></li>
@@ -54,21 +54,33 @@
             </div>
         </header>
         <main>
-            <div class="hero_bnner">
-                <div class="hero_txt">
-                    <p>지금부터 챙기세요</p> 
-                    <p1>무더위 대비<br>여름 건강관리 필수템</p1>
+            <div id="hero_bnner">
+                <div id="hero_container">
+                    <a href="#" class="hero_slide">
+                        <div class="hero_txt">
+                            <p>지금부터 챙기세요</p> 
+                            <p1>무더위 대비<br>여름 건강관리 필수템</p1>
+                        </div>
+                    </a>
+                    <a href="#" class="hero_slide">
+                        <div class="hero_txt">
+                            <p>지금부터 챙기세요</p> 
+                            <p1>무더위 대비<br>여름 건강관리 필수템</p1>
+                        </div>
+                    </a>
                 </div>
+                <div class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></div>
+                <div class="next_btn"><img src="./images/next_btn.svg" alt="다음 광고 보기"></div>
                 <div class="pagination">
                     <p>01</p>
                     <span>/15</span>
-                    <button><img src="#" alt="멈추기"></button>
+                    <button><img src="./images/swiper_stop.svg" alt="멈추기"></button>
                 </div>
             </div>
             <div id="product_md">
                 <div class="product_tltle">
                     <h2>MD's PICK</h2>
-                    <a href="#"><p>전체보기</p><img src="#" alt=""></a>
+                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ul id="contents_category">
                     <li><button type="button" data="">전체</button></li>
@@ -82,13 +94,29 @@
                 <ul id="md_list">
                     <li li class="md_item">
                         <a href="#">
-                            <img src="" alt="" class="md_img">
-                            <p class="brand">소니</p>
-                            <h3>WH-CH520 무선 헤드폰</h3>
+                            <img src="./images/produc_001.jpg" alt="" class="md_img">
+                            <p class="brand">아이스크림미디어</p>
+                            <h3>★온라인최저가★ [비움] 에코브리즈 KF 94 마스크 100매 중형/대형 (장당 180원대)</h3>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
+                                <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                <img src="./images/best.png" alt="best" class="event">
+                            </div>
+                        </a>
+                    </li>
+                    <li li class="md_item">
+                        <a href="#">
+                            <img src="./images/produc_002.jpg" alt="" class="md_img">
+                            <p class="brand">아이스크림미디어</p>
+                            <h3>[한삼인x아이스크림미디어] 하이 튼튼 홍삼 젤리(60포 - 2개월분)</h3>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                <img src="./images/best.png" alt="best" class="event">
                             </div>
                         </a>
                     </li>
@@ -99,10 +127,14 @@
                 <span>더보기</span>
                 <img src="#" alt="">
             </a>
-            <div class="slide_container">
-                <div class="slide_txt">
-                    <h3>초등한국사 4회 완성</h3>
-                    <p>국립중앙박물관 창의 기억 학습법</p>
+            <div class="slide_wrap">
+                <div class="slide_container">
+                    <div class="slide">
+                        <div class="slide_txt">
+                            <h3>초등한국사 4회 완성</h3>
+                            <p>국립중앙박물관 창의 기억 학습법</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="pagination">
                     <p>01</p>
@@ -112,7 +144,7 @@
             <div id="product_new">
                 <div class="product_tltle">
                     <h2>신상품</h2>
-                    <a href="#"><p>전체보기</p><img src="#" alt=""></a>
+                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ul id="new_list">
                     <li li class="product_item">
@@ -126,77 +158,122 @@
                                 <span class="original">99,000</span>
                             </div>
                         </a>
-                    </li>>
+                    </li>
                     <!-- li 반복 -->
                 </ul>
-            </div>>
+                <div class="prev_btn"><img src="./images/prev_btn.svg" alt="이전"></div>
+                <div class="next_btn"><img src="./images/next_btn.svg" alt="다음"></div>
+            </div>
             <div id="recommend">
                 <div id="recommend_txt">
                     <em>기획전</em>
                     <h2>하이스토어가 추천하는<br>다양한 상품모음</h2>
                     <p>필요한 상품을 합리적인 가격으로 구매하세요</p>
                 </div>
+                <ul id="recommend_list">
+                    <li li class="recommend_item">
+                        <a href="#">
+                            <img src="./images/recommend_001.png" alt="" class="recommend_img">
+                            <h3>두근두근 초등 1학년 함께 준비하는 마음</h3>
+                            <p>우리는 모두 처음입니다. 아이도, 부모도</p>
+                            <p class="period">2024-07-15 2024-07-20</p>
+                        </a>
+                    </li>
+                    <li li class="recommend_item">
+                        <a href="#">
+                            <img src="./images/recommend_002.jpg" alt="" class="recommend_img">
+                            <h3>아이스크림 교과서/자습서&평가문제...</h3>
+                            <p class="period">2024-07-15 2024-07-20</p>
+                        </a>
+                    </li>
+                    <!-- li 반복 -->
+                </ul>
                 <button type="button"><img src="#" alt="이전 상품"></button>
                 <button type="button"><img src="#" alt="다음 상품"></button>
-                <ul id="recommend_list">
-                <li li class="recommend_item">
-                    <a href="#">
-                        <img src="" alt="" class="recommend_img">
-                        <h3>장마 철벽방어 아이템</h3>
-                        <p>비오는날에도 걱정없이 버티는 방법</p>
-                        <p class="period">2024-07-15 2024-07-20</p>
-                    </a>
-                </li>
-                <!-- li 반복 -->
             </div>
             <div id="product_best">
                 <div class="product_tltle">
                     <h2>베스트</h2>
-                    <a href="#"><p>전체보기</p><img src="#" alt=""></a>
+                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ol id="best_list">
                     <li li class="best_item">
                         <a href="#">
-                            <img src="" alt="" class="md_img">
+                            <img src="./images/best_001.jpg" alt="" class="best_img">
                             <span class="number">1</span>
-                            <p class="brand">소니</p>
-                            <h3>WH-CH520 무선 헤드폰</h3>
+                            <p class="brand">아이스크림미디어</p>
+                            <h3>★단독초특가★[제니튼] 닥터제니 1450 주니어 고불소치약&칫솔 세트(딸기향/자두사과향/샤인머스캣...</h3>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
+                                <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                <img src="./images/new.png" alt="new" class="event">
+                            </div>
+                        </a>
+                    </li>
+                    <li li class="best_item">
+                        <a href="#">
+                            <img src="./images/best_002.jpg" alt="" class="best_img">
+                            <span class="number">1</span>
+                            <p class="brand">주식회사 넥스트에너지</p>
+                            <h3>[경기 고양] 원마운트 스노우파크 특가(~3/2)</h3>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <img src="./images/new.png" alt="new" class="event">
                             </div>
                         </a>
                     </li>
                     <!-- li 반복 -->
                 </ol>
+                <div class="prev_btn"><img src="./images/prev_btn.svg" alt="이전"></div>
+                <div class="next_btn"><img src="./images/next_btn.svg" alt="다음"></div>
             </div>
-            <div class="slide_container">
-                <div class="slide_txt">
-                    <h3>초등한국사 4회 완성</h3>
-                    <p>국립중앙박물관 창의 기억 학습법</p>
+            <div class="slide_wrap">
+                <div class="slide_container">
+                    <div class="slide">
+                        <div class="slide_txt">
+                            <h3>초등한국사 4회 완성</h3>
+                            <p>국립중앙박물관 창의 기억 학습법</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="pagination">
                     <p>01</p>
                     <span>/15</span>
                 </div>
             </div>
-            <div id="product_md">
+            <div id="product_sale">
                 <div class="product_tltle">
-                    <h2>MD's PICK</h2>
-                    <a href="#"><p>전체보기</p><img src="#" alt=""></a>
+                    <h2>특가</h2>
+                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
-                
                 <ul id="sale_list">
                     <li li class="sale_item">
                         <a href="#">
-                            <img src="" alt="" class="md_img">
-                            <p class="brand">소니</p>
-                            <h3>WH-CH520 무선 헤드폰</h3>
+                            <img src="./images/sale_001.jpg" alt="" class="sale_img">
+                            <p class="brand">㈜ 키움하우스</p>
+                            <h3>[오볼] 투온 오볼 원터치 텀블러 480ml (갤럭시/롤리팝/스노우씰/판다)</h3>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
+                                <img src="./images/free_delivery.png" class="event">
+                            </div>
+                        </a>
+                    </li>
+                    <li li class="sale_item">
+                        <a href="#">
+                            <img src="./images/sale_002.jpg" alt="" class="sale_img">
+                            <p class="brand">주식회사 다원스토리</p>
+                            <h3>[보국] 에어셀 카본 탄소매트 허그미 싱글 BKB-1602S</h3>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <img src="./images/free_delivery.png" class="event">
                             </div>
                         </a>
                     </li>
@@ -204,7 +281,7 @@
                 </ul>
                 <a href="#">
                     <span>더보기</span>
-                    <img src="#" alt="">
+                    <img src="./images/down.svg" alt="더보기">
                 </a>
             </div>
         </main>
@@ -214,10 +291,10 @@
                     <em>공지사항</em>
                     <p>하이스토어 '개인정보처리방침' 변경 안내</p>
                 </a>
-                <a href="#"><img src="#" alt="더보기"></a>
+                <a href="#"><img src="./images/plus.svg" alt="더보기"></a>
             </div>
             <div id="address">
-                <img src="#" alt="">
+                <img src="./images/footer_logo.png" alt="i-scream_media">
                 <ul>
                     <li><a href="#">회사소개</a></li>
                     <li><a href="#">이용약간</a></li>
@@ -244,14 +321,10 @@
                 </p>
             </div>
             <div id="f_service">
-                <a href="#">하이스토어 고객센터</a>
+                <a href="#">하이스토어 고객센터<img src="./images/light.svg" alt="더보기"></a>
                 <em>1544-6040</em>
                 <p>평일 09:00 ~ 18:00 (주말, 공휴일 휴무)</p>
                 <span>점심시간 12:00 ~ 13:00</span>
-            </div>
-            <div>
-                <a href="#"><img src="#" alt="youTube"></a>
-                <a href="#"><img src="#" alt="instagram"></a>
             </div>
         </footer>
     </div>
