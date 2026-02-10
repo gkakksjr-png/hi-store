@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -83,13 +83,13 @@
                     <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ul id="contents_category">
-                    <li><button type="button" data="">전체</button></li>
-                    <li><button type="button" data="">가전/디지털</button></li>
-                    <li><button type="button" data="">식품/건강</button></li>
-                    <li><button type="button" data="">주방/샌활가구</button></li>
-                    <li><button type="button" data="">취미/스포츠/레저/체험</button></li>
-                    <li><button type="button" data="">도서/문구/완구</button></li>
-                    <li><button type="button" data="">뷰티/패션잡화</button></li>
+                    <li><button type="button" id="all">전체</button></li>
+                    <li><button type="button" id="digital">가전/디지털</button></li>
+                    <li><button type="button" id="Food ">식품/건강</button></li>
+                    <li><button type="button" id="kitchen">주방/생활가구</button></li>
+                    <li><button type="button" id="hobbies">취미/스포츠/레저/체험</button></li>
+                    <li><button type="button" id="books">도서/문구/완구</button></li>
+                    <li><button type="button" id="fashion">뷰티/패션잡화</button></li>
                 </ul>
                 <ul id="md_list">
                     <li li class="md_item">
@@ -146,16 +146,31 @@
                     <h2>신상품</h2>
                     <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
+                
                 <ul id="new_list">
                     <li li class="product_item">
                         <a href="#">
-                            <p class="brand">케어프린</p>
-                            <img src="" alt="" class="new_img">
-                            <h3>자동무선 멀티 다지기</h3>
+                            <p class="brand">아이스크림미디어</p>
+                            <img src="./images/new_001.png" alt="" class="new_img">
+                            <h3>초등 사회 3-1 교과서 [2022개정]</h3>
                             <div class="price">
                                 <span class="discount">10%</span>
                                 <span class="current">97,950</span>
                                 <span class="original">99,000</span>
+                                <img src="./images/new.png" alt="new" class="event">
+                            </div>
+                        </a>
+                    </li>
+                    <li li class="product_item">
+                        <a href="#">
+                            <p class="brand">아이스크림미디어</p>
+                            <img src="./images/new_001.png" alt="" class="new_img">
+                            <h3>초등 사회 3-1 교과서 [2022개정]</h3>
+                            <div class="price">
+                                <span class="discount">10%</span>
+                                <span class="current">97,950</span>
+                                <span class="original">99,000</span>
+                                <img src="./images/new.png" alt="new" class="event">
                             </div>
                         </a>
                     </li>
