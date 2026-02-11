@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하이스토어</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="shortcut icon" href="./images/favicon_hi-store.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="h_top">
-                <ul>
+                <ul id="lnb_left">
                     <li><a href="#">아이스크림</a></li>
                     <li><a href="#">교과서</a></li>
                     <li><a href="#">연수원</a></li>
@@ -26,52 +26,181 @@
                     <li><a href="#">아이스크림</a></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
-                <ul class="lnb">
+                <ul class="lnb_light">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
             <div class="h_middle">
-                <h1><a href="./index.html"></a><img src="./images/logo.png" alt="hi-store"></h1>
-                <form id="search_box">
-                    <input type="text">
-                    <button type="button"><img src="./images/search.svg" alt="search"></button>
+                <h1>
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="hi-store">
+                    </a>
+                </h1>
+                <form method="get" action="#" id="search_box">
+                    <input type="text" id="search_input" name="search_input" placeholder="요즘 학부모들 사이에서 입소문 난 독서쿠션 최저가">
+                    <button type="button" id="search_btn"><img src="./images/search.svg" alt="검색하기"></button>
                 </form>
-                <ul class="lnb_user">
+                <ul id="lnb_user">
                     <li><a href="#"><img src="./images/truck.svg" alt="delivery"></a></li>
                     <li><a href="#"><img src="./images/person.svg" alt="profire"></a></li>
                     <li><a href="#"><img src="./images/cart.svg" alt="cart"></a></li>
                 </ul>
             </div>
             <div class="h_bottom">
-                <ul>
-                    <li><a href="#"><img src="./images/category_menu.svg" alt="메뉴보기"></a></li>
-                    <li><a href="#">좋은책방</a></li>
-                    <li><a href="#">체험티켓</a></li>
-                    <li><a href="#">베스트</a></li>
-                    <li><a href="#">신상품</a></li>
-                    <li><a href="#">기획전</a></li>
-                </ul>
+                <nav id="gnb">
+                    <ul>
+                        <li class="depth1">
+                            <button type="button" id="menu_open">
+                                <img src="./images/category_menu.svg" alt="메뉴보기">
+                            </button>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">교과서/도서</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">아이스크림교과서</a></li>
+                                        <li><a href="#">원서/학습서</a></li>
+                                        <li><a href="#">청소년 추천도서</a></li>
+                                        <li><a href="#">학부모 추천도서</a></li>
+                                        <li><a href="#">가정 살림</a></li>
+                                        <li><a href="#">자연 과학</a></li>
+                                        <li><a href="#">IT 모바일</a></li>
+                                        <li><a href="#">학부모 추천도서</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">학습교구</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">과목별 교구</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">과학교구</a></li>
+                                                <li><a href="#">사회/역사 교구</a></li>
+                                                <li><a href="#">수학교구</a></li>
+                                                <li><a href="#">영어교구</a></li>
+                                                <li><a href="#">수학교구</a></li>
+                                                <li><a href="#">한글/언어 교구</a></li>
+                                                <li><a href="#">예체능 교구</a></li>
+                                                <li><a href="#">코딩 교구</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">퍼즐/보드/DIY</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">DIY만들기</a></li>
+                                                <li><a href="#">보드게임</a></li>
+                                                <li><a href="#">퍼즐/블록/완구</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">학용품/준비물</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">학용품</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">필기류/필통</a></li>
+                                                <li><a href="#">노트/메모지</a></li>
+                                                <li><a href="#">자/각도기/콤파스</a></li>
+                                                <li><a href="#">파일/바인더</a></li>
+                                                <li><a href="#">플래너/다이어리/데코</a></li>
+                                                <li><a href="#">데스크용품</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">음악용품</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">리듬악기</a></li>
+                                                <li><a href="#">관악기</a></li>
+                                                <li><a href="#">현악기</a></li>
+                                                <li><a href="#">건반악기</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">미술용품</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">풀/가위</a></li>
+                                                <li><a href="#">색연필/싸인펜/마카</a></li>
+                                                <li><a href="#">물감/크레파스</a></li>
+                                                <li><a href="#">클레이/점토</a></li>
+                                                <li><a href="#">스케치북</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">생존수영</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">수영복/래쉬가드</a></li>
+                                                <li><a href="#">수영모/물안경</a></li>
+                                                <li><a href="#">수건/수영용품</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">체험/티켓</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">레저/티켓</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">과학교구</a></li>
+                                                <li><a href="#">사회/역사 교구</a></li>
+                                                <li><a href="#">수학교구</a></li>
+                                                <li><a href="#">영어교구</a></li>
+                                                <li><a href="#">수학교구</a></li>
+                                                <li><a href="#">한글/언어 교구</a></li>
+                                                <li><a href="#">예체능 교구</a></li>
+                                                <li><a href="#">코딩 교구</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">퍼즐/보드/DIY</a>
+                                            <ul class="depth4">
+                                                <li><a href="#">체험/공연/전시</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">좋은책방</a></li>
+                        <li><a href="#">체험티켓</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">기획전</a></li>
+                    </ul>
+                </nav>
+                <!-- 서브메뉴 추가 -->
             </div>
         </header>
         <main>
-            <div id="hero_bnner">
-                <div id="hero_container">
-                    <a href="#" class="hero_slide">
-                        <div class="hero_txt">
-                            <p>지금부터 챙기세요</p> 
-                            <p1>무더위 대비<br>여름 건강관리 필수템</p1>
-                        </div>
-                    </a>
-                    <a href="#" class="hero_slide">
-                        <div class="hero_txt">
-                            <p>지금부터 챙기세요</p> 
-                            <p1>무더위 대비<br>여름 건강관리 필수템</p1>
-                        </div>
-                    </a>
+            <a href="./index.html" class="fab"><img src="./images/top_btn.svg" alt="맨위로가기"></a>
+            <div id="hero_wrap">
+                <div class="hero_view">
+                    <div class="hero_list"><!-- bg img -->
+                        <a href="#">
+                            <div class="hero_txt">
+                                <p>[농협한삼인] 하이튼튼 60포 2개월분 초특가</p> 
+                                <h1>명절 특가 49,000원(~2/22까지)<br>🎊복 많이 면역력도 많이!🎊</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero_list"><!-- bg img -->
+                        <a href="#">
+                            <div class="hero_txt">
+                                <p>[펌플렉스] 바른자세 레벨업 130 독서쿠션 59,800원📚</p> 
+                                <h1>부모님 입소문템 입고<br>바른자세 독서쿠션 최저가🎉</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero_list"><!-- bg img -->
+                        <a href="#">
+                            <div class="hero_txt">
+                                <p>신학기 필수템 교과서&자습서 미리 준비하기</p> 
+                                <h1>🏫아이스크림 교과서 출시🏫<br>교과서/자습서&문제집 기획전</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></div>
-                <div class="next_btn"><img src="./images/next_btn.svg" alt="다음 광고 보기"></div>
+                <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
+                <button type="button" class="next_btn"><img src="./images/next_btn.svg" alt="다음 광고 보기"></button>
                 <div class="pagination">
                     <p>01</p>
                     <span>/15</span>
@@ -80,24 +209,24 @@
             </div>
             <div id="product_md">
                 <div class="product_tltle">
-                    <h2>MD's PICK</h2>
-                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
+                    <h1>MD's PICK</h1>
+                    <a href="#" class="full"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
-                <ul id="contents_category">
+                <ul id="md_category">
                     <li><button type="button" id="all">전체</button></li>
                     <li><button type="button" id="digital">가전/디지털</button></li>
-                    <li><button type="button" id="Food ">식품/건강</button></li>
+                    <li><button type="button" id="Food">식품/건강</button></li>
                     <li><button type="button" id="kitchen">주방/생활가구</button></li>
                     <li><button type="button" id="hobbies">취미/스포츠/레저/체험</button></li>
                     <li><button type="button" id="books">도서/문구/완구</button></li>
                     <li><button type="button" id="fashion">뷰티/패션잡화</button></li>
                 </ul>
                 <ul id="md_list">
-                    <li li class="md_item">
+                    <li class="md_item">
                         <a href="#">
-                            <img src="./images/produc_001.jpg" alt="" class="md_img">
+                            <img src="./images/product_001.jpg" alt="" class="md_img">
                             <p class="brand">아이스크림미디어</p>
-                            <h3>★온라인최저가★ [비움] 에코브리즈 KF 94 마스크 100매 중형/대형 (장당 180원대)</h3>
+                            <h2>★온라인최저가★ [비움] 에코브리즈 KF 94 마스크 100매 중형/대형 (장당 180원대)</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
@@ -107,32 +236,67 @@
                             </div>
                         </a>
                     </li>
-                    <li li class="md_item">
+                    <li class="md_item">
                         <a href="#">
-                            <img src="./images/produc_002.jpg" alt="" class="md_img">
+                            <img src="./images/product_002.jpg" alt="" class="md_img">
                             <p class="brand">아이스크림미디어</p>
-                            <h3>[한삼인x아이스크림미디어] 하이 튼튼 홍삼 젤리(60포 - 2개월분)</h3>
+                            <h2>[한삼인x아이스크림미디어] 하이 튼튼 홍삼 젤리(60포 - 2개월분)</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
-                                <img src="./images/free_delivery.png" alt="free_delivery" class="event">
-                                <img src="./images/best.png" alt="best" class="event">
+                                <div class="badge_box">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </li>
+                    <li class="md_item">
+                        <a href="#">
+                            <img src="./images/product_003.jpg" alt="" class="md_img">
+                            <p class="brand">주식회사 넥스트에너지</p>
+                            <h2>[강원 춘천] 레고랜드 1일 이용권</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/special_price.png" alt="special_price" class="event">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="md_item">
+                        <a href="#">
+                            <img src="./images/product_004.png" alt="" class="md_img">
+                            <p class="brand">위빗</p>
+                            <h2>★입소문템★[바디오랩] 음파쑥쑥 성장판 마사지기 SS-88</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
                             </div>
                         </a>
                     </li>
                     <!-- li 반복 -->
                 </ul>
             </div>
-            <a href="#">
+            <a href="#" class="more">
                 <span>더보기</span>
-                <img src="#" alt="">
+                <img src="./images/down.svg" alt="더보기">
             </a>
             <div class="slide_wrap">
                 <div class="slide_container">
-                    <div class="slide">
+                    <div class="slide"> <!-- 배너 이미지 -->
                         <div class="slide_txt">
-                            <h3>초등한국사 4회 완성</h3>
+                            <h2>초등한국사 4회 완성</h2>
                             <p>국립중앙박물관 창의 기억 학습법</p>
                         </div>
                     </div>
@@ -144,16 +308,15 @@
             </div>
             <div id="product_new">
                 <div class="product_tltle">
-                    <h2>신상품</h2>
-                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
+                    <h1>신상품</h1>
+                    <a href="#" class="full"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
-                
                 <ul id="new_list">
-                    <li li class="product_item">
+                    <li class="product_item">
                         <a href="#">
                             <p class="brand">아이스크림미디어</p>
                             <img src="./images/new_001.png" alt="" class="new_img">
-                            <h3>초등 사회 3-1 교과서 [2022개정]</h3>
+                            <h2>초등 사회 3-1 교과서 [2022개정]</h2>
                             <div class="price">
                                 <span class="discount">10%</span>
                                 <span class="current">97,950</span>
@@ -162,11 +325,11 @@
                             </div>
                         </a>
                     </li>
-                    <li li class="product_item">
+                    <li class="product_item">
                         <a href="#">
                             <p class="brand">아이스크림미디어</p>
                             <img src="./images/new_002.png" alt="" class="new_img">
-                            <h3>초등 과학 3-1 교과서 [2022개정]</h3>
+                            <h2>초등 과학 3-1 교과서 [2022개정]</h2>
                             <div class="price">
                                 <span class="discount">10%</span>
                                 <span class="current">97,950</span>
@@ -182,63 +345,107 @@
             </div>
             <div id="recommend">
                 <div id="recommend_txt">
-                    <em>기획전</em>
-                    <h2>하이스토어가 추천하는<br>다양한 상품모음</h2>
+                    <p>기획전</p>
+                    <h1>하이스토어가 추천하는<br>다양한 상품모음</h1>
                     <p>필요한 상품을 합리적인 가격으로 구매하세요</p>
                 </div>
                 <ul id="recommend_list">
-                    <li li class="recommend_item">
+                    <li class="recommend_item">
                         <a href="#">
                             <img src="./images/recommend_001.png" alt="" class="recommend_img">
-                            <h3>두근두근 초등 1학년 함께 준비하는 마음</h3>
+                            <h2>두근두근 초등 1학년 함께 준비하는 마음</h2>
                             <p>우리는 모두 처음입니다. 아이도, 부모도</p>
                             <p class="period">2024-07-15 2024-07-20</p>
                         </a>
                     </li>
-                    <li li class="recommend_item">
+                    <li class="recommend_item">
                         <a href="#">
                             <img src="./images/recommend_002.jpg" alt="" class="recommend_img">
-                            <h3>아이스크림 교과서/자습서&평가문제...</h3>
+                            <h2>아이스크림 교과서/자습서&평가문제...</h2>
+                            <p class="period">2024-07-15 2024-07-20</p>
+                        </a>
+                    </li>
+                    <li class="recommend_item">
+                        <a href="#">
+                            <img src="./images/recommend_003.jpg" alt="" class="recommend_img">
+                            <h2>설 명절선물세트 초특가🧧🎁</h2>
                             <p class="period">2024-07-15 2024-07-20</p>
                         </a>
                     </li>
                     <!-- li 반복 -->
                 </ul>
-                <button type="button"><img src="#" alt="이전 상품"></button>
-                <button type="button"><img src="#" alt="다음 상품"></button>
+                <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 상품"></button>
+                <button type="button" class="next_btn"><img src="./images/next_btn.svg" alt="다음 상품"></button>
             </div>
             <div id="product_best">
                 <div class="product_tltle">
-                    <h2>베스트</h2>
-                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
+                    <h1>베스트</h1>
+                    <a href="#" class="full"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ol id="best_list">
-                    <li li class="best_item">
+                    <li class="best_item">
                         <a href="#">
                             <img src="./images/best_001.jpg" alt="" class="best_img">
                             <span class="number">1</span>
                             <p class="brand">아이스크림미디어</p>
-                            <h3>★단독초특가★[제니튼] 닥터제니 1450 주니어 고불소치약&칫솔 세트(딸기향/자두사과향/샤인머스캣...</h3>
+                            <h2>★단독초특가★[제니튼] 닥터제니 1450 주니어 고불소치약&칫솔 세트(딸기향/자두사과향/샤인머스캣...</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
-                                <img src="./images/free_delivery.png" alt="free_delivery" class="event">
-                                <img src="./images/new.png" alt="new" class="event">
+                                <div class="badge_box">
+                                    <img src="./images/new.png" alt="new" class="event">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
                             </div>
                         </a>
                     </li>
-                    <li li class="best_item">
+                    <li class="best_item">
                         <a href="#">
                             <img src="./images/best_002.jpg" alt="" class="best_img">
                             <span class="number">2</span>
                             <p class="brand">주식회사 넥스트에너지</p>
-                            <h3>[경기 고양] 원마운트 스노우파크 특가(~3/2)</h3>
+                            <h2>[경기 고양] 원마운트 스노우파크 특가(~3/2)</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
-                                <img src="./images/new.png" alt="new" class="event">
+                                <div class="badge_box">
+                                    <img src="./images/new.png" alt="new" class="event">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="best_item">
+                        <a href="#">
+                            <img src="./images/best_003.png" alt="" class="best_img">
+                            <span class="number">3</span>
+                            <p class="brand">아이스크림미디어</p>
+                            <h2>★학습환경 1위템★ [펌플렉스] 바른자세 독서쿠션 독서대 레벨업쿠션130</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/new.png" alt="new" class="event">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="best_item">
+                        <a href="#">
+                            <img src="./images/best_004.png" alt="" class="best_img">
+                            <span class="number">4</span>
+                            <p class="brand">주식회사 스마트인피니</p>
+                            <h2>[경기] 과천 서울랜드 파크이용권(~26년 3월)</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -251,13 +458,13 @@
                 <div class="slide_container">
                     <div class="slide">
                         <div class="slide_txt">
-                            <h3>안 사면 무조건 손해! 치과비 아끼는 양치습관</h3>
+                            <h2>안 사면 무조건 손해! 치과비 아끼는 양치습관</h2>
                             <p>제니튼 주니어 치약&칫솔 세트 단독 초특가</p>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="slide_txt">
-                            <h3>앞서 가는 부모님의 선택! 학습교구 추천</h3>
+                            <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
                             <p>요즘 가장 핫한학습템은?</p>
                         </div>
                     </div>
@@ -269,63 +476,101 @@
             </div>
             <div id="product_sale">
                 <div class="product_tltle">
-                    <h2>특가</h2>
-                    <a href="#"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
+                    <h1>특가</h1>
+                    <a href="#" class="full"><p>전체보기</p><img src="./images/light.svg" alt="전체보기"></a>
                 </div>
                 <ul id="sale_list">
-                    <li li class="sale_item">
+                    <li class="sale_item">
                         <a href="#">
                             <img src="./images/sale_001.jpg" alt="" class="sale_img">
                             <p class="brand">㈜ 키움하우스</p>
-                            <h3>[오볼] 투온 오볼 원터치 텀블러 480ml (갤럭시/롤리팝/스노우씰/판다)</h3>
+                            <h2>[오볼] 투온 오볼 원터치 텀블러 480ml (갤럭시/롤리팝/스노우씰/판다)</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
-                                <img src="./images/free_delivery.png" class="event">
+                                <div class="badge_box">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
                             </div>
                         </a>
                     </li>
-                    <li li class="sale_item">
+                    <li class="sale_item">
                         <a href="#">
                             <img src="./images/sale_002.jpg" alt="" class="sale_img">
                             <p class="brand">주식회사 다원스토리</p>
-                            <h3>[보국] 에어셀 카본 탄소매트 허그미 싱글 BKB-1602S</h3>
+                            <h2>[보국] 에어셀 카본 탄소매트 허그미 싱글 BKB-1602S</h2>
                             <div class="price">
                                 <span class="discount">12%</span>
                                 <span class="current">82,100</span>
                                 <span class="original">89,000</span>
-                                <img src="./images/free_delivery.png" class="event">
+                                <div class="badge_box">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                    <img src="./images/free_delivery.png" alt="free_delivery" class="event">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sale_item">
+                        <a href="#">
+                            <img src="./images/sale_003.jpg" alt="" class="sale_img">
+                            <p class="brand">함께늘봄</p>
+                            <h2>★2~3월 특별 할인★ [함께늘봄] 창의 기억법 적용 국립중앙박물관 4회차</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/new.png" alt="new" class="event">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sale_item">
+                        <a href="#">
+                            <img src="./images/sale_004.jpg" alt="" class="sale_img">
+                            <p class="brand">주식회사 넥스트에너지</p>
+                            <h2>[경주] 경주월드 종일이용권</h2>
+                            <div class="price">
+                                <span class="discount">12%</span>
+                                <span class="current">82,100</span>
+                                <span class="original">89,000</span>
+                                <div class="badge_box">
+                                    <img src="./images/best.png" alt="best" class="event">
+                                </div>
                             </div>
                         </a>
                     </li>
                     <!-- li 반복 -->
                 </ul>
-                <a href="#">
+                <a href="#" class="more">
                     <span>더보기</span>
                     <img src="./images/down.svg" alt="더보기">
                 </a>
             </div>
         </main>
         <footer>
-            <div id="f_notice">
+            <div id="f_top">
                 <a href="#">
                     <em>공지사항</em>
                     <p>하이스토어 '개인정보처리방침' 변경 안내</p>
                 </a>
                 <a href="#"><img src="./images/plus.svg" alt="더보기"></a>
             </div>
-            <div id="address">
+            <div id="f_buttom">
                 <img src="./images/footer_logo.png" alt="i-scream_media">
-                <ul>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약간</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li>
-                        <button type="button">제휴 및 입점문의</button>
-                        <a href="#">사업자정보확인</a>
-                    </li>
-                </ul>
+                <nav id="fnb">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약간</a></li>
+                        <li><a href="#"><em>개인정보처리방침</em></a></li>
+                        <li>
+                            <button type="button" id="contact">제휴 및 입점문의</button>
+                            <a href="#" target="_blank">사업자정보확인</a>
+                        </li>
+                        <li><a href="#"><em>고객센터</em></a></li>
+                    </ul>
+                </nav>
                 <address>
                     <em>(주)아이스크림미디어</em>
                     대표이사 : 허주환, 현준우
@@ -336,17 +581,17 @@
                     팩스 : 02-3444-0308
                     이메일 : mall@hi-store.co.kr
                 </address>
-                <p>
+                <p id="txt">
                     하이스토어에서 판매되는 상품중에는 위탁판매자가 판매하는 상품이 포함되어 있습니다.
                     위탁판매자의 상품의 경우, 하이스토어는 통신판매중개자로서 거래당사자가 아니며, 위탁판매자가 등록한 상품정보 및 거래등에 대해 책임을 지지않습니다.
                     Copyright &copy; (주)아이스크림미디어. All Rights Reserved
                 </p>
-            </div>
-            <div id="f_service">
-                <a href="#">하이스토어 고객센터<img src="./images/light.svg" alt="더보기"></a>
-                <em>1544-6040</em>
-                <p>평일 09:00 ~ 18:00 (주말, 공휴일 휴무)</p>
-                <span>점심시간 12:00 ~ 13:00</span>
+                <div id="customer_Service">
+                    <a href="#">하이스토어 고객센터<img src="./images/light.svg" alt="더보기"></a>
+                    <em>1544-6040</em>
+                    <span id="hours">평일 09:00 ~ 18:00 (주말, 공휴일 휴무)</span>
+                    <span id="break">점심시간 12:00 ~ 13:00</span>
+                </div>
             </div>
         </footer>
     </div>
