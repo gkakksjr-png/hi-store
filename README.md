@@ -1,5 +1,6 @@
 ### 0213 수정
 * 헤더 서브메뉴 .menu_wrap(depth2 + 베스트 상품) 추가
+* 헤더 서브메뉴 li 잘못쓴 거 삭제
 * 히어로 배너 이름 수정 #slide_wrap
 * .product_title > 전체보기 이름 수정 .all_veiw
 * .more 위치 수정 (#product_md, #product_sale 가장 밑)
