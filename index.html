@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="./images/favicon_hi-store.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -15,16 +15,16 @@
         <header>
             <div class="h_top">
                 <ul id="lnb_left">
-                    <li><a href="#">아이스크림</a></li>
-                    <li><a href="#">교과서</a></li>
-                    <li><a href="#">연수원</a></li>
-                    <li><a href="#">쌤튜브</a></li>
-                    <li><a href="#">아이스크림몰</a></li>
-                    <li><a href="#">띵커벨</a></li>
-                    <li><a href="#">클래스툴</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">아이스크림</a></li>
-                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#" target="_blank">아이스크림</a></li>
+                    <li><a href="#" target="_blank">교과서</a></li>
+                    <li><a href="#" target="_blank">연수원</a></li>
+                    <li><a href="#" target="_blank">쌤튜브</a></li>
+                    <li><a href="#" target="_blank">아이스크림몰</a></li>
+                    <li><a href="#" target="_blank">띵커벨</a></li>
+                    <li><a href="#" target="_blank">클래스툴</a></li>
+                    <li><a href="#" target="_blank">로그인</a></li>
+                    <li><a href="#" target="_blank">아이스크림</a></li>
+                    <li><a href="#" target="_blank">고객센터</a></li>
                 </ul>
                 <ul class="lnb_light">
                     <li><a href="#">로그인</a></li>
@@ -65,7 +65,6 @@
                                         <li><a href="#">가정 살림</a></li>
                                         <li><a href="#">자연 과학</a></li>
                                         <li><a href="#">IT 모바일</a></li>
-                                        <li><a href="#">학부모 추천도서</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -140,19 +139,6 @@
                                     <ul class="depth3">
                                         <li><a href="#">레저/티켓</a>
                                             <ul class="depth4">
-                                                <li><a href="#">과학교구</a></li>
-                                                <li><a href="#">사회/역사 교구</a></li>
-                                                <li><a href="#">수학교구</a></li>
-                                                <li><a href="#">영어교구</a></li>
-                                                <li><a href="#">수학교구</a></li>
-                                                <li><a href="#">한글/언어 교구</a></li>
-                                                <li><a href="#">예체능 교구</a></li>
-                                                <li><a href="#">코딩 교구</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">퍼즐/보드/DIY</a>
-                                            <ul class="depth4">
                                                 <li><a href="#">체험/공연/전시</a></li>
                                             </ul>
                                         </li>
@@ -167,44 +153,45 @@
                         <li><a href="#">기획전</a></li>
                     </ul>
                 </nav>
-                <!-- 서브메뉴 추가 -->
             </div>
         </header>
         <main>
             <a href="./index.html" class="fab"><img src="./images/top_btn.svg" alt="맨위로가기"></a>
-            <div id="hero_wrap">
-                <div class="hero_view">
-                    <div class="hero_list"><!-- bg img -->
-                        <a href="#">
-                            <div class="hero_txt">
-                                <p>[농협한삼인] 하이튼튼 60포 2개월분 초특가</p> 
-                                <h1>명절 특가 49,000원(~2/22까지)<br>🎊복 많이 면역력도 많이!🎊</h1>
-                            </div>
-                        </a>
+            <div id="hero_wrap"><!-- 히어로 배너 wrap -->
+                <div class="hero_container"><!-- 뷰포트 -->
+                    <div class="hero_list"><!-- 배너 부모 -->
+                        <div class="hero hero1"><!-- bg img -->
+                            <a href="#">
+                                <div class="hero_txt">
+                                    <p>[농협한삼인] 하이튼튼 60포 2개월분 초특가</p> 
+                                    <h1>명절 특가 49,000원(~2/22까지)<br>🎊복 많이 면역력도 많이!🎊</h1>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero hero2"><!-- bg img -->
+                            <a href="#">
+                                <div class="hero_txt">
+                                    <p>[펌플렉스] 바른자세 레벨업 130 독서쿠션 59,800원📚</p> 
+                                    <h1>부모님 입소문템 입고<br>바른자세 독서쿠션 최저가🎉</h1>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero hero3"><!-- bg img -->
+                            <a href="#">
+                                <div class="hero_txt">
+                                    <p>신학기 필수템 교과서&자습서 미리 준비하기</p> 
+                                    <h1>🏫아이스크림 교과서 출시🏫<br>교과서/자습서&문제집 기획전</h1>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hero_list"><!-- bg img -->
-                        <a href="#">
-                            <div class="hero_txt">
-                                <p>[펌플렉스] 바른자세 레벨업 130 독서쿠션 59,800원📚</p> 
-                                <h1>부모님 입소문템 입고<br>바른자세 독서쿠션 최저가🎉</h1>
-                            </div>
-                        </a>
+                    <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button><!-- 버튼 -->
+                    <button type="button" class="next_btn"><img src="./images/next_btn.svg" alt="다음 광고 보기"></button>
+                    <div class="pagination">
+                        <p>01</p>
+                        <span>/15</span>
+                        <button><img src="./images/swiper_stop.svg" alt="멈추기"></button>
                     </div>
-                    <div class="hero_list"><!-- bg img -->
-                        <a href="#">
-                            <div class="hero_txt">
-                                <p>신학기 필수템 교과서&자습서 미리 준비하기</p> 
-                                <h1>🏫아이스크림 교과서 출시🏫<br>교과서/자습서&문제집 기획전</h1>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
-                <button type="button" class="next_btn"><img src="./images/next_btn.svg" alt="다음 광고 보기"></button>
-                <div class="pagination">
-                    <p>01</p>
-                    <span>/15</span>
-                    <button><img src="./images/swiper_stop.svg" alt="멈추기"></button>
                 </div>
             </div>
             <div id="product_md">
@@ -292,18 +279,32 @@
                 <span>더보기</span>
                 <img src="./images/down.svg" alt="더보기">
             </a>
-            <div class="slide_wrap">
-                <div class="slide_container">
-                    <div class="slide"> <!-- 배너 이미지 -->
-                        <div class="slide_txt">
-                            <h2>초등한국사 4회 완성</h2>
-                            <p>국립중앙박물관 창의 기억 학습법</p>
+            <div class="slide_wrap"><!-- wrap -->
+                <div class="slide_container"><!-- 뷰포트 -->
+                    <div class="slide_list"><!-- 배너부모 -->
+                        <div class="slide slide1">
+                            <div class="slide_txt">
+                                <h2>안 사면 무조건 손해! 치과비 아끼는 양치습관</h2>
+                                <p>제니튼 주니어 치약&칫솔 세트 단독 초특가</p>
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide_txt">
+                                <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
+                                <p>요즘 가장 핫한학습템은?</p>
+                            </div>
+                        </div>
+                        <div class="slide slide3">
+                            <div class="slide_txt">
+                                <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
+                                <p>요즘 가장 핫한학습템은?</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pagination">
-                    <p>01</p>
-                    <span>/15</span>
+                    <div class="pagination"><!-- 버튼 -->
+                        <p>01</p>
+                        <span>/15</span>
+                    </div>
                 </div>
             </div>
             <div id="product_new">
@@ -372,7 +373,6 @@
                             <p class="period">2024-07-15 2024-07-20</p>
                         </a>
                     </li>
-                    <!-- li 반복 -->
                 </ul>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 상품"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn.svg" alt="다음 상품"></button>
@@ -454,24 +454,32 @@
                 <div class="prev_btn"><img src="./images/prev_btn.svg" alt="이전"></div>
                 <div class="next_btn"><img src="./images/next_btn.svg" alt="다음"></div>
             </div>
-            <div class="slide_wrap">
-                <div class="slide_container">
-                    <div class="slide">
-                        <div class="slide_txt">
-                            <h2>안 사면 무조건 손해! 치과비 아끼는 양치습관</h2>
-                            <p>제니튼 주니어 치약&칫솔 세트 단독 초특가</p>
+            <div class="slide_wrap"><!-- wrap -->
+                <div class="slide_container"><!-- 뷰포트 -->
+                    <div class="slide_list"><!-- 배너부모 -->
+                        <div class="slide slide1">
+                            <div class="slide_txt">
+                                <h2>안 사면 무조건 손해! 치과비 아끼는 양치습관</h2>
+                                <p>제니튼 주니어 치약&칫솔 세트 단독 초특가</p>
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide_txt">
+                                <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
+                                <p>요즘 가장 핫한학습템은?</p>
+                            </div>
+                        </div>
+                        <div class="slide slide3">
+                            <div class="slide_txt">
+                                <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
+                                <p>요즘 가장 핫한학습템은?</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="slide_txt">
-                            <h2>앞서 가는 부모님의 선택! 학습교구 추천</h2>
-                            <p>요즘 가장 핫한학습템은?</p>
-                        </div>
+                    <div class="pagination"><!-- 버튼 -->
+                        <p>01</p>
+                        <span>/15</span>
                     </div>
-                </div>
-                <div class="pagination">
-                    <p>01</p>
-                    <span>/15</span>
                 </div>
             </div>
             <div id="product_sale">
