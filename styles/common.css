@@ -1,0 +1,127 @@
+body {}
+#wrap {}
+#wrap header {}
+/* ----------------------------------------------------------- h_top */
+#wrap header .h_top_bg {background-color: blue;}
+#wrap header .h_top {
+    background-color: aqua; 
+    width: 1280px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+#wrap header .h_top #lnb_left {}
+#wrap header .h_top #lnb_left li {}
+#wrap header .h_top .lnb_light {}
+#wrap header .h_top .lnb_light li {}
+/* ----------------------------------------------------------- h_top 공통선택자 */
+#wrap header .h_top #lnb_left,
+#wrap header .h_top .lnb_light {
+    display: flex; flex-flow: row nowrap; 
+    gap: 24px; 
+}
+#wrap header .h_top #lnb_left li,
+#wrap header .h_top .lnb_light li {
+    background-color: cadetblue;
+    font-size: 0.75rem; 
+    line-height: 40px;
+}
+/* ----------------------------------------------------------- h_middle */
+#wrap header .h_middle {
+    background-color: bisque;
+    width: 1280px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    margin-top: 22px;
+}
+#wrap header .h_middle h1 {width: 124px;}
+#wrap header .h_middle h1 a {}
+#wrap header .h_middle h1 a img {width: 100%;}
+#wrap header .h_middle #search_box {
+    background-color: blueviolet;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    border-radius: 20px;
+    padding: 4px;
+}
+#wrap header .h_middle #search_box #search_input {
+    background-color: plum;
+    height: 28px; width: 394px;
+    padding: 10px; margin-right: 28px;
+}
+#wrap header .h_middle #search_box #search_btn {
+    background-color: pink;
+    width: 30px;
+    margin-right: 12px; margin-left: auto;
+}
+#wrap header .h_middle #search_box #search_btn img {width: 100%;}
+#wrap header .h_middle #lnb_user {
+    display: flex; flex-flow: row nowrap;
+    gap: 23px;
+}
+#wrap header .h_middle #lnb_user li {width: 32px;}
+#wrap header .h_middle #lnb_user li a {}
+#wrap header .h_middle #lnb_user li a img {width: 100%;}
+/* ----------------------------------------------------------- h_bottom */
+#wrap header .h_bottom {
+    background-color: lightblue;
+    width: 1280px; margin: 0 auto;
+    padding-bottom: 20px;
+}
+#wrap header .h_bottom #gnb {}
+#wrap header .h_bottom #gnb ul {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    gap: 32px;
+}
+#wrap header .h_bottom #gnb ul li {
+    font-size: 1.13rem;
+    color: #666;
+    background-color: darkseagreen;
+    padding: 14px 6px;
+}
+#wrap header .h_bottom #gnb ul .full_menu {}
+#wrap header .h_bottom #gnb ul .full_menu #menu_open {
+    width: 40px; height: 40px; 
+    background-color: blue;
+}
+#wrap header .h_bottom #gnb ul .full_menu #menu_open img{}
+#wrap header .h_bottom #gnb ul .full_menu .depth1 {display: none;}/* 풀메뉴 */
+/* ----------------------------------------------------------- f_top */
+#wrap footer {}
+#wrap footer #f_top {}
+#wrap footer #f_top a h3 {}
+#wrap footer #f_top a p {}
+#wrap footer #f_top .veiw {}
+#wrap footer #f_top .veiw img {}
+#wrap footer {}
+/* ----------------------------------------------------------- f_bottom */
+#wrap footer #f_bottom {}
+#wrap footer #f_bottom img {}
+#wrap footer #f_bottom #fnb {}
+#wrap footer #f_bottom #fnb ul {}
+#wrap footer #f_bottom #fnb ul li {}
+#wrap footer #f_bottom #fnb ul li a {}
+#wrap footer #f_bottom #fnb ul li a em {}
+#wrap footer #f_bottom #fnb ul li #contact {}
+#wrap footer #f_bottom address {}
+#wrap footer #f_bottom address em {}
+#wrap footer #f_bottom #txt {}
+#wrap footer #f_bottom #customer_service {}
+#wrap footer #f_bottom #customer_service a {}
+#wrap footer #f_bottom #customer_service a img {}
+#wrap footer #f_bottom #customer_service em {}
+#wrap footer #f_bottom #customer_service #hours {}
+#wrap footer #f_bottom #customer_service #break {}
+/* ----------------------------------------------------------- fab */
+#wrap main .fab {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    background-color: chartreuse;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    position: fixed; z-index: 999;
+    right: 100px; bottom: 100px;
+}
+#wrap main .fab img {width: 20px;}

@@ -1,0 +1,4 @@
+#wrap main {}
+#wrap main #slide_wrap {}
+#wrap main #slide_wrap .slide_container {}
+#wrap main #slide_wrap .slide_container .slide_list {}

@@ -10,3 +10,7 @@
 * scrollbar_btn > button type, id 추가
 * #f_top 공지사항 태그 수정 (span -> p3)
 * #f_top 더보기 이름 수정 .veiw
+### 0227 CSS 시작
+* 헤더 2행까지
+* 2행 정렬 방법 확인
+* 히어로 배너 슬라이드 선택자 작성 중
