@@ -91,7 +91,8 @@ body {min-width: 1280px;}
     margin: 0 32px 0 0;
 }
 #wrap header .h_bottom #gnb ul .full_menu {}
-#wrap header .h_bottom #gnb ul .full_menu #menu_open:hover + .depth1 {display: flex;}
+#wrap header .h_bottom #gnb ul .full_menu #menu_open:hover + .depth1,
+#wrap header .h_bottom #gnb ul .full_menu .depth1:hover {display: flex;}
 #wrap header .h_bottom #gnb ul .full_menu #menu_open {
     width: 40px; height: 40px; 
     background-color: blue;
